@@ -1,213 +1,76 @@
 <!DOCTYPE html>
-<head>
-    <!--styling--> 
-    <title>hexa :3</title>
-    <link rel="icon" type="image/png" href="/media/favicon.ico" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <!--scripts-->
-    <script defer src="/js/script.js"></script>
-    <script src="/js/mouse-min.js"></script>
-
-    <!--compatibility stuff-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!--embed-->
-    <meta content="nya~" property="og:title" />
-    <meta content="super cute website :3" property="og:description" />
-    <meta content="http://hexa.jest.gay/" property="og:url" />
-    <meta content="#6600ff" data-react-helmet="true" name="theme-color" />
-
-</head>
-
-<!--music and video-->
-<body onclick="startmusic(), unhidecontent()">
-     <audio loop="" preload="auto" id="audio" src="/media/music.mp3" type="audio/mp3">
-    </audio>
-   <video autoplay="" muted="" loop="" id="video" src="/media/video.mp4" type="video/mp4">
-    </video>
-          <div id="click-container">
-        <div id="click-container-items">
-            <h1 id="purple-text title click-container-items-text">[click]</h1>
-        </div>
-    </div>
+<html lang="en">
+  <head>
+    <title>hexa</title>
+    <link href="/assets/code/style-m.css" media="(max-width: 600px)" rel="stylesheet"  type="text/css" />
+    <link href="/assets/code/style.css" media="(min-width: 600px)" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="hexa.jest.gay" property="og:title" />
+    <meta
+      content="~ the future is hidden in the past ~"
+      property="og:description"
+    />
+    <meta content="https://hexa.jest.gay" property="og:url" />
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+  </head>
   
-    <!--cursor-->
-    <script>
-      let mouse = new Mouse({
-          mouse: "point",
-          color: "#ffffff",
-          el: "a , button",
-          mouseHover: false,
-          mousePointer: false,
-          el_hover: true,
-          mouse_clicked: true,
-          clrChanged: false,
-      });
-      mouse.mouse();
-  </script>
-
-    <!--center screen-->
-    <div class="screen">
-        <h1 class="purple-text title">home</h1><br>
-        <p class="subtitle" id="motd">MOTD: loading...</p>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="w-name">hexa.jest.gay</h1>
+        <p id="w-name-m">hexa.jest.gay</p>
         <hr>
+        /<a href="/">home</a>/
+        /<a href="/specs.html">specs</a>/
+        /<a href="/tech.html">tech</a>/
+        /<a href="/art.html">art</a>/
+        <hr>
+          <div id="content">
         <p class="subtitle">hi, i'm <b>hexa</b>. (he/him/his)<br>
-        programmer and graphics designer from Poland,<br>
-        i am also <b>gay</b>, <b>furry</b> and a <b>femboy</b> (no thigh pics, sorry).<br>
+        <a class="purple-text bold-text" href="https://github.com/heksaa" target="_blank">coder</a> and graphics designer from Poland,<br>
+        i like listening to <a class="purple-text bold-text" target="_blank" href="https://open.spotify.com/user/gdqzwim3n6fvfk176spvwyf51">music</a>, drawing and recording videos on <a class="purple-text bold-text" href="https://www.youtube.com/channel/UC4HNTSgBAmltqzJ3mSBB1Gg" target="_blank">youtube</a> (polish)!!<br>
+        i am also <b>gay</b> and a <b>femboy</b> (no thigh pics, sorry).<br>
         <br>
         i also like playing <a class="purple-text bold-text" href="https://steamcommunity.com/id/heksiaczek" target="_blank">games</a> and collecting electronics.<br>
-        you can view my collection <a onClick="togglePhones()" class="bold-text purple-text">here</a><br>
-        <br>
-        i made this site a while ago (august 2022), then i decided to not use it because it wasn't too light, so<br>
-        like last month, i decided to bring it back and upgrade it a bit. here it is!!<br>
+        you can view my collection <a href="https://hexa.jest.gay/tech.html" class="bold-text purple-text">here</a><br>
         <br>
         i can talk in <b>polish</b> and <b>english</b>.<br>
         also, i can code in <b>html</b> and <b>css</b>.<br>
         learning <b>python</b>.<br>
+        <br>
+        you can contact me on <a href="https://t.me/hexa727" target="_blank">telegram</a>.
         <hr>
         <p class="subtitle">
+          bitcoin: <strong>bc1qvwyysf92r2tnhhl3mscf7wn0n40t89e4qt4w4r</strong><br>
           dogecoin: <strong>DH2xMFQzetXvR7AiX6vNZPE79KAyHDJLk1</strong><br>
           </p>
+          </div>
         <hr>
-        <a onClick="toggleSpecs()" class="bold-text purple-text">specs</a><br>
-        <a onClick="toggleCredits()" class="bold-text purple-text">credits</a><br>
-        <a class="purple-text bold-text" href="https://t.me/hexa727" target="_blank">telegram</a><br>
-        <a class="purple-text bold-text" href="https://github.com/heksaa" target="_blank">github</a><br>
-        <a class="purple-text bold-text" target="_blank" href="https://open.spotify.com/user/gdqzwim3n6fvfk176spvwyf51">spotify</a><br>
-        <a class="purple-text bold-text" href="https://www.youtube.com/channel/UC4HNTSgBAmltqzJ3mSBB1Gg" target="_blank">youtube</a><br>
-        <a class="purple-text bold-text" href="mailto:hexa@hexa.femboy.run">mail</a><br>
-    </div>
-    
-    <!--phone collection-->
-    <div class="screen phones-disabled" id="phones">
-        <h1 class="purple-text title">tech collection</h1><br>
-                phones:
-        <ul>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/galaxya50/">Samsung Galaxy A50</a> | main phone</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/galaxysiiineoplus/">Samsung Galaxy S3</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/sghe700/">Samsung E700</a> | working (simlocked)</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/gts5610/">Samsung S5610</a> | keyboard not working</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/maxcom/classicmm128/">Maxcom MM128</a> | no battery</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/maxcom/classicmm134/">Maxcom MM134</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/c101/">Nokia C1-01</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/1661/">Nokia 1661</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/n8/">Nokia N8</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/6131/">Nokia 6131</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/3310/">Nokia 3310</a> | unknown, no charger</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/nokia/e52/">Nokia E52</a> | broken screen and bent</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/apple/iphone48gb/">iPhone 4</a> | 4x, two working perfectly</li>
-          <li><a href="https://en.wikipedia.org/wiki/IPod_Touch_(4th_generation)">iPod Touch 4G</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/IPod_Touch_(2nd_generation)">iPod Touch 2G</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/lg/optimusl5ii/">LG Optimus L5 II</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/lg/l90/">LG L90</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/sony/xperiatlte">Sony Xperia T</a> | motherboard broken</li>
-        </ul>
-        <p>tablets:</p>
-        <ul>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/galaxytab47.0wifi/">Samsung Galaxy Tab 4</a></li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/samsung/galaxytaba20167.0/">Samsung Galaxy Tab A 2016</a> | 2x, one with broken screen</li>
-          <li><a href="https://www.gsmchoice.com/en/catalogue/alcatel/onetouchpixi7/">Alcatel Onetouch Pixi 7</a> | broken screen</li>
-          <li><a href="https://gsmarena.com/dell_venue_7-5751.php">Dell Venue 7 3730</a></li>
-      </ul>
-      <p>laptops:</p>
-      <ul>
-        <li><a href="https://www.pcworld.idg.com.au/review/dell/inspiron_1545/319285/specs/">Dell Inspiron 1545 | home server</a></li>
-        <li><a href="https://www.pcworld.idg.com.au/review/dell/inspiron_1525/218987/specs/">Dell Inspiron 1525</a></li>
-        <li>HP Pavilion ZE4300 | no drive bay</li>
-        <li><a href="https://www.msi.com/Laptop/CR610/Specification">MSI CR610 | weird state, not working. prob. mobo issue</a></li>
-        <li><a href="https://laptopmedia.com/series/toshiba-satellite-l50-c/">Toshiba Satellite L50</a> | broken screen and hinges, no cooler</li>
-        <li><a href="https://laptopmedia.com/laptop-specs/lenovo-thinkpad-t450-2/">Lenovo Thinkpad T450</a> | main laptop</li>
-      </ul>
-        <hr>
-        <a onClick="togglePhones()" class="bold-text">back</a>
-    </div>
-          
-    <!--credits-->
-    <div class="screen credits-disabled" id="credits">
-        <h1 class="purple-text title">credits</h1><br>
-        <p class="subtitle">AKA who created this masterpiece</p>
-        <hr>
-        <p>
-            <b>people:</b><br>
-            <br>
-            × idea by <bold><a onClick="toggleCredits()" style="text-decoration: underline;">hexa</a></bold><br>
-            × coded by <bold><a href="//ggorg.xyz" style="text-decoration: underline;">GGORG</a></bold><br>
-        <hr>
-        <b>langs:</b><br>
-        <br>
-        × html<br>
-        × css<br>
-        × javascript<br>
-        <hr>
-          copyright (c) hexa [hexa@hexa.femboy.run] 2022-2023<br>
-          liecensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="purple-text bold-text" target="_blank">GNU GPL v3</a><br>
-          <a href="https://github.com/heksaa/website-new" target="_blank" class="purple-text bold-text">source code</a><br>
-        </p>
-        <hr>
-        <a onClick="toggleCredits()" class="bold-text">back</a>
-    </div>
-    
-    <!--specs-->
-    <div class="screen specs-disabled" style="justify-content: start;" id="specs">
-        <h1 class="purple-text title">specs</h1><br>
-        <p class="subtitle">my computer specification!</p>
-        <hr>
-        <div style="justify-content: start;">
-          <ul>
-            <li>cpu: Intel Core i7-7700K 4,2GHz</li>
-            <li>cpu cooler: be quiet! Pure Rock BK009</li>
-            <li>gpu: MSI GeForce GTX 1060 6GB</li>
-            <li>psu: XFX Core XT 600W</li>
-            <li>ram: Corsair Vengenance LPX DDR4 3000MHz 8GBx2</li>
-            <li>mobo: MSI Z270 Tomahawk Arctic</li>
-            <li>case: SilentiumPC Regnum RG4</li>
-            <li>case fans: SilentiumPC Case Fan 120mm (x3)</li>
-            <li>os: Windows 10 Home (sorry, only for gaming)</li>
-            </ul>
-            <p>storage:</p>
-            <ul>
-            <li>M.2 NVMe Adata XPG SX8200 256GB</li>
-            <li>HDD Seagate Barracuda 2TB</li>
-          </ul>
-          <p>laptop specs:</p>
-          <ul>
-          <li>cpu: Intel Core i5-5300U 2,8GHz</li>
-          <li>gpu: Intel HD Graphics 5500</li>
-          <li>ram: 12GB DDR3 1x4, 1x8</li>
-          <li>os: Arch Linux w/ bspwm</li>
-          <li>storage: SSD Goodram C50 128GB</li>
-          </ul>
+      </header>
+      <footer>
+        <strong>
+          this website is completely javascript free!
+          <br />
+          <br />
+          special thanks to <a target="_blank" href="https://ggorg.xyz">ggorg</a>
+          <br />
+          copyright © hexa 2022-2023 
+          <br />
+          licensed under GNU GPL v3,
+          <a target="_blank" href="https://github.com/heksaa/website-new">
+            source code
+          </a>
+        <br><br>
+        <div id="ball" style="display:block">
+          <img src="assets/webring/flag-progress.png" alt="">
+          <img src="assets/webring/flag-gaymen.png" alt="">
+          <img src="assets/webring/archlinux.gif" alt="">
         </div>
-        <hr>
-        <a onClick="togglePeri()" class="bold-text purple-text">peripherals</a><br>
-        <a onClick="toggleSpecs()" class="bold-text">back</a>
+      </strong>
+      </footer>
     </div>
-
-    <!--peripherals-->
-    <div class="screen peri-disabled" style="justify-content: start;" id="peri">
-      <h1 class="purple-text title">peripherals</h1><br>
-      <p class="subtitle">yes, im a big fan of logitech.</p>
-      <hr>
-       <div style="justify-content: start;">
-       <ul>
-         <li>mouse: <b>Logitech G703</b><br></li>
-         <li>keyboard: <b>SPC Gear GK630K Red, tape modded, custom keycaps</b><br></li>
-         <li>headphones <b>Moondrop Chu</b><br></li>
-         <li>webcam: <b>Logitech C310</b><br></li>
-         <li>microphone: <b>microphone from webcam</b></li>
-         <li>gamepad1: <b>Xbox One Controller</b><br></li>
-         <li>gamepad2: <b>Steam Controller</b></li>
-       </ul>
-       </div>
-       <hr>
-       <a onClick="togglePeri()" class="bold-text">back</a>
-   </div>
-
-    <!--particles-->
-    <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js" type="text/javascript"></script>
-
-</body>
+  </body>
+</html>

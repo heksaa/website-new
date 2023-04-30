@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("/assets/VCR_OSD_MONO_1.001.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: regular;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #000000;
+  max-width: 50rem;
+    font-family: "VCR OSD Mono", serif !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  line-height: 1.3;
+}
+
+#w-name {
+  color: #9900ff;
+}
+
+#w-name-m {
+  display: none;
+}
+
+a {
+  color: #9900ff;
+  text-decoration: none;
+  transition: 600ms;
+}
+
+a:hover {
+  color: #cba6f7;
+  transition: 600ms;
+}
+
+ul, p { margin: 0.2em 0; }
+
+h1 {
+  font-size: 60px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+footer {
+  margin-bottom: 25px;
+}
+
+.rice {
+  width: 750px;
+  height: auto;
+}
+
+.phonerice {
+  width: 400px;
+  height: auto;
+}
+
+
+#name {
+  color: #f5c2e7;
+}
+
+#n {
+  color: #9900ff;
+}
+
+hr {
+  margin: 15px 0px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+
+#webrings{
+  text-align: center;
+}
+
+#bigger{
+  text-align: center;
+}
+
